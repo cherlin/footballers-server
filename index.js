@@ -20,7 +20,7 @@ TODO:
 Läs in CSV-fil.
 Parsa till JS-objekt
 Håll koll på så att filen inte ändras - om ändras - läs in och parsa på nytt.
-Tillgängliggör relevanta API endpoints: 
+Tillgängliggör relevanta API endpoints:
 * /api/players -> id, namn och lag.
 * /api/player/:id -> full spelarspec.
 */
