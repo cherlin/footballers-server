@@ -2,14 +2,12 @@ const express = require('express');
 const cors = require('cors');
 const logger = require('morgan');
 require('dotenv').config();
+const routes = require('./routes.js');
 
 const app = express();
 app.use(cors());
-app.use(logger());
-
-app.get('/hello', (req, res) => {
-  res.send("Hello World!");
-});
+app.use(logger('tiny'));
+app.use(routes);
 
 const port = process.env.PORT;
 const host = process.env.HOSTNAME;
