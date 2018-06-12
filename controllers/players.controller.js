@@ -2,13 +2,13 @@ const { findAll, findById } = require('../models/player.model.js');
 
 exports.getAllPlayers = (req, res) => {
   const players = findAll();
-  res.json(players);
+  res.status(200).json(players);
 };
 
 exports.getPlayerById = (req, res) => {
   const player = findById(req.params.id);
   if (!player) {
-    res.sendStatus(404);
+    res.status(404).end();
   }
-  res.json(player);
+  res.status(200).json(player);
 };
