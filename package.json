@@ -1,11 +1,12 @@
 {
-  "name": "one-agency-code-test",
+  "name": "fotballers-server",
   "version": "1.0.0",
-  "description": "Code Test for One Agency",
+  "description": "Fotballers Server",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "author": "Christofer Herlin",
   "license": "ISC",

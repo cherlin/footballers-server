@@ -1,11 +1,16 @@
-In this code test you are given a CSV file with player stats.
-Your assignment is two folded:
+# Fotballers Server
 
-1. Create an backend that parses the CSV file and exposes it as a REST API.
-2. Create a client that uses the REST API to fetch the data and display it in a nice
-   way for the user.
+Backend for the [Fotballers Frontend](https://github.com/cherlin/fotballers-frontend).
 
-You are free to choose technologies and architecture as you want. But an example
-could be to use Spring Boot as a backend and then create a single page application
-with React.
+## How to use
+1. Clone the repo. ```git clone https://github.com/cherlin/fotballers-server```
+2. Change into the directory.
+3. Run ```yarn install``` or ```npm install``` 
+4. Run ```yarn start``` or ```npm start``` to start the server.
 
+By default the server listens to port 1337 on localhost. This can be changed with environmental variables PORT and HOSTNAME respectively.
+
+The server can be started with Nodemon to restart on file changes by running ```yarn dev``` or ```npm run dev``` instead of "start" as described in step 4 above.
+
+## Available API methods and endpoints.
+* GET /api/players - returns an array of player objects in JSON format.
