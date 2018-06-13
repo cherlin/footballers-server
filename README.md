@@ -4,7 +4,7 @@ Backend for the [Footballers Frontend](https://github.com/cherlin/footballers-fr
 
 ## How to use
 1. Clone the repo. ```git clone https://github.com/cherlin/footballers-server```
-2. Change into the directory.
+2. Change into the directory. ```cd footballers-server```
 3. Run ```yarn install``` or ```npm install``` 
 4. Run ```yarn start``` or ```npm start``` to start the server.
 
